@@ -1,0 +1,32 @@
+body{
+        margin:0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: content-box;
+        background-color: #111010;
+        scroll-behavior: smooth;
+        scroll-snap-type: none;
+}
+.homepage-about{
+        background-color: #000000;
+}
+.about-holder{
+        width: auto;
+        height: auto;
+        display: flex;
+        margin: 30px;
+        align-items: center;
+}
+.content-about{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        line-height: 1.5rem;
+        color: #ffff;
+        text-align: justify;
+}
+.about-button{
+        margin-left: -50px;
+}
