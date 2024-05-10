@@ -9,6 +9,7 @@ body{
     scroll-behavior: smooth;
     scroll-snap-type: none;
     color: #FFFFFF;
+    transition: all 0.4s;
 }
 /* For the Header Content*/
 .nav{
@@ -33,6 +34,10 @@ nav ul li{
     display: inline-block;
     margin:30px 5px;
 
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
 }
 .cart{
     cursor: pointer;

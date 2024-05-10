@@ -1,0 +1,43 @@
+.page-login nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 10vh;
+  border: 2px solid rgba(255, 255, 255, 0.10);
+}
+.login-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+.logform-holder{
+    display: flex;
+    flex-direction: column;
+}
+.login-holder button{
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.log-butt{
+    display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+}
+.double-line{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    position:absolute;
+}
+.double-line::before, .double-line::after{
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.10);
+}
