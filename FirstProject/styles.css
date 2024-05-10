@@ -8,6 +8,7 @@ body{
     background-color: #111010;
     scroll-behavior: smooth;
     scroll-snap-type: none;
+    color: #FFFFFF;
 }
 /* For the Header Content*/
 .nav{

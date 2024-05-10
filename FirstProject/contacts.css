@@ -1,0 +1,77 @@
+
+#contacts{
+    background-color: black;
+}
+.contact-holder{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form{
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+}
+.contact-form input{
+       width: 600px;
+       height: 50px;
+       margin: 10px 20px;
+       outline: none;
+       border-radius: 5px;
+       font-size: 1.2rem;
+       text-indent: 20px;
+}
+.contact-form textarea{
+    width: 600px;
+    height: 200px;
+    margin: 10px 20px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-indent: 20px;
+}
+.submit-btn{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #FEAB03;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+.textcon-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+/* End Of Get in touch Page*/
+
+/* start Of Store Information page*/
+
+.info-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+
+}
+.info-content{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 30px;
+    margin: 20px;
+}
+.con-icon{
+    font-size: 25px;
+}

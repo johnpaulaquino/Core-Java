@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contacts.css">
+
 </head>
 <body>
     <!--Start of Nav bar-->
@@ -41,11 +43,49 @@
 
     <!--Start of Contac Us-->
       <section class="contacus" id="contacts">
-        <div class="contact-holder">
-            <form action="" class="form-holder"></form>
-            <div class="getintouch"></div>
-        </div>
+        
+        <div class="contact-holder ">
+            <form action="" class="form-holder">
+                <div class="textcon-holder">
+                    <h2>Get In Touch With Us</h2>
+                    <p>If you want to directly reach us, Please fill out the form below:</p>
+                </div>
+                <div class="contact-form">
+                    <label for="Name"> <span>*</span> Full Name</label>
+                    <input type="text" id="Name" placeholder="Enter your Full Name" required>
+
+                    <label for="email"> <span>*</span> Email</label>
+                    <input type="email" id="email" placeholder="Email" required>
+
+                    <label for="tel"> <span>*</span> Mobile Number</label>
+                    <input type="tel" id="mobile" placeholder="Mobile Number" required>
+
+                    <label for="Message"> <span>*</span> Your Message</label>
+                    <textarea name="Message" id="textarea-con" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+                <button class="submit-btn">Submit</button>
+            </form>
       </section>
-    
+    <section id="store-info" class="info-store">
+        <h1>Store Information</h1>
+        <div class="info-div">
+            <div class="info-content">
+                <i class="fa-solid fa-location-dot con-icon"></i>
+                <p>2256 Rizal Avenue corner Laguna street <br> 
+                    3F RBM Building <br>1104 Manila <br>Metro Manila 
+                    <br>Philippines</p>
+            </div>
+            <div class="info-content">
+                <i class="fa-solid fa-phone con-icon"></i>
+                <p>Call us <br>(0905) 216-9035 Globe (calls only) <br>
+                    (0939) 518-4000 Smart (calls only)</p>
+            </div>
+            <div class="info-content">
+                <i class="fa-solid fa-envelope con-icon"></i>
+                <p>Email Us <br>mstproject@gmail.com</p>
+            </div>
+        </div>
+    </section>
 </body>
+<script src="https://kit.fontawesome.com/92a1fe717a.js" crossorigin="anonymous"></script>
 </html>
