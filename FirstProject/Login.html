@@ -7,42 +7,66 @@
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/login.css">
 </head>
-<body>
+<body class="log-body">
+    <nav class="log-nav">
+        <h3><a href="index.html">Logo Goes Here</a></h3>
+    </nav>
     <section id="login-page" class="page-login">
-        <nav>
-            <h3><a href="index.html">Logo Goes Here</a></h3>
-        </nav>
-        <div class="login-content">  
-            <article class="login-holder">
-                <button class="log-butt">
-                    <i class="fa-brands fa-facebook fb-icon"></i>
-                    <p>CONTINUE WITH FACEBOOK</p>
-                </button>
-                <button class="log-butt">
-                    <i class="fa-brands fa-apple apple-icon"></i>
-                    <p>CONTINUE WITH APPLE</p>
-                </button>
-                <button class="log-butt">
-                    <i class="fa-brands fa-google google-icon"></i>
-                    <p>CONTINUE WITH GOOGLE</p>
-                </button>
-                
-                <form action="" class="logform-holder">
-                    <div class="line-sep">
-                        <h2 class="double-line">or</h2>
-                    </div>
-                    <label for="username">Email Address or Username</label><input  id="username" type="text">
-                    <label for="password">Password</label><input id="password" type="password">
-                    <p><a href="">Forgot Your Password?</a></p>
-                   <label for="remember-me"><input id="remember-me" type="checkbox">Remember Me</label>
-                    <button class="log-butt">Log In</button>
-                    <span class="login-seperator"></span>
-                    <h3>Don't have an Account?</h3>
-                    <button><a href="">SIGN UP</a></button>
-                </form>
-            </article>
-        </div>
+        <article class="login-holder">
+            <div class="header-log"></div>
+            <h1 class="log-text">Log in to GDJshop</h1>
+            <button class="log-butt ">
+            <div class="buttcontent-holder">       
+                <i class="fa-brands fa-facebook fb-icon"></i>
+                <p>CONTINUE WITH FACEBOOK</p>
+            </div>
+           </button>
+
+           <button class="log-butt">
+            <div class="buttcontent-holder">
+                <i class="fa-brands fa-apple apple-icon"></i>
+                <p>CONTINUE WITH APPLE</p>
+            </div>
+           </button>
+
+           <button class="log-butt">
+            <div class="buttcontent-holder">              
+                <i class="fa-brands fa-google google-icon"></i>
+                <p>CONTINUE WITH GOOGLE</p>
+            </div>
+            </button>
+        <form action="" id="form-login" class="login-form">
+            
+
+            <div class="line-container">
+                <span class="double-line"></span>
+                <h1 class="">or</h1>
+                <span class="double-line"></span>
+            </div>
+
+            <div class="email-pass">
+                <label for="username" class="input-label">Email Address or Username</label><input  id="username"class="input-text" type="email" required>
+                <label for="password" class="input-label">Password</label><input id="password"class="input-text" type="password">
+                <div class="remember-me1">
+                    <input id="remember-me" type="checkbox"> <label for="remember-me">Remember me</label>
+                </div>
+               
+                <button class="log-butt1">Log In</button>
+                <a class="forgot-pass" href=""><p>Forgot Your Password?</p></a>
+            </div>
+
+            <span class="bottom-seperator"></span>
+                <h3 class="log-signup">Don't have an account?<span><a href="">Sign up for GDJShop</a></span></h3>
+                   
+        </form>
+        </article>
     </section>
+    <footer class="log-footer">
+        <div class="footer-div">
+            <p>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a>
+                 and <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.</p>
+        </div>
+    </footer>
 </body>
 <script src="https://kit.fontawesome.com/92a1fe717a.js" crossorigin="anonymous"></script>
 <script src="Javascript/Function.js"></script>
