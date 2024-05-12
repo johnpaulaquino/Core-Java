@@ -1,0 +1,175 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: content-box;
+    background-color: #111010;
+    scroll-behavior: smooth;
+    scroll-snap-type: none;
+    color: #FFFFFF;
+    transition: all 0.4s;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.signup-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   width: 100%;
+   min-height: 80vh;
+}
+.signup-header{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.signup-container{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.email-holder{
+    display: flex;
+    flex-direction: column;    
+    align-items: start;
+}
+#signup-email{
+    width: 450px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    background-color: #111010;
+      color: #FFFF;
+    outline: none;
+    border: 2px solid #FFFF;
+}
+.next-signupbutton{
+    width: 450px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #F72F09;
+    color: #FFFF;
+    font-size: 1rem;
+}
+.sameclass{
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 55px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #111010;
+    color: #FFFF;
+    outline: none;
+    border: 2px solid #FFFF;
+    cursor: pointer;
+}
+.signcontent-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+.signcontent-holder p{
+    margin-left: 50px;
+}
+.signbottom-seperator{
+    display: block;
+    width: 450px;
+height: 1px;
+background-color: rgba(255, 255, 255, 0.30);
+    margin: 20px 0 40px 0;
+}
+.signdouble-line{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.30);
+    margin: 20px;
+    }
+.signline-container{
+width: 480px;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 30px 0 40px 0;
+}
+.signup-footer{
+    width: 100%;
+    min-height:10vh;
+    background-color: #111010;
+    color:  rgba(255, 255, 255, 0.50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign-footercontent{
+    min-height:10vh;
+    display: inline;
+    position: absolute;
+}
+.create-pass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ .page{
+    display: none;
+}
+section >*:nth-child(2){  
+   display: flex;
+}
+
+/* This is the Second Page Design */
+.create-passform{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.icon-textwrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-right: 260px;
+}
+.text-createcontainer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.text-createcontainer p{
+    margin-top: 80px;
+    margin-right: 160px;
+}
+.progress-bar{
+    width: 600px;
+    height: 5px;
+    border-radius: 25px;
+    background-color: antiquewhite;
+}
+.fill-bar{
+    width: calc(500px/3);
+    height: 5px;
+    border-radius: 25px;
+    background-color: green;
+    margin-top: -5px;
+
+}
+.previous-button{
+    font-size: 2rem;
+}
