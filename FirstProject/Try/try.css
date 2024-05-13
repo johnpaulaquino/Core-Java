@@ -1,9 +1,0 @@
-.page {
-    display: none; /* Hide all pages initially */
-    transition: opacity 0.5s ease; /* Add transition for opacity */
-  }
-  
-  section .page:first-child {
-    display: block; /* Show the first page initially */
-  }
-  

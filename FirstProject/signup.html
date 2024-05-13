@@ -12,7 +12,7 @@
         <h3><a href="index.html">Logo Goes Here</a></h3>
     </nav>
     <section class="signup-page" id="page-signup">
-       
+             <!--Sign Up Step 1-->
         <article class="signup-container page">
             <h1 class="signup-header">Sign up to start Shopping</h1>
             <form action="" class="email-holder">
@@ -48,8 +48,10 @@
             <div class="already-signup"></div>
             <p>Already have an account? <a href="Login.html" target="_self">Log in here.</a></p>
         </article>
-        <!--Sign Up Step 2-->
 
+
+        
+        <!--Sign Up Step 2-->
         <article class="create-pass page">
             
         <div class="bar-container">
@@ -59,8 +61,7 @@
         </div>
 
             <div class="icon-textwrapper">
-                <div class="iconprev-holder"></div>
-                <i class="fa-solid fa-chevron-left previous-button"></i>
+                <button class="previous-button"><i class="fa-solid fa-chevron-left"></i></button>
                 <div class="text-createcontainer">
                     <p class="step-1">Step 1 of 3</p>
                     <h2 class="createpass-h1">Create password</h2>
@@ -70,7 +71,7 @@
 
             <form action="" class="create-passform">
                 <label for="">Password</label>
-                <input type="password">
+                <input type="password" required>
                 <p>Your password must contain at least</p>
                 <div class="validator-icon">
                     <i class="fa-regular fa-circle"></i><p> 1 letter</p>
@@ -84,13 +85,73 @@
                 <button class="next-signupbutton">Next</button>
             </form>
         </article>
-    </section>
+         <!--End of Step 2-->
+       
+         <!--Sign Up Step 3-->
+         <article class="create-about page">
+            
+            <div class="bar-container">
+    
+                <div class="progress-bar bar"></div>
+                <div class="fill-bar bar"></div>
+            </div>
+    
+                <div class="icon-textwrapper2">
+                   <button class="previous-button"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="text-createcontainer2">
+                        <p class="step-2">Step 2 of 3</p>
+                        <h1 class="createpass-h12">Tell us about yourself</h1>
+                    </div>
+                   
+                </div>
+                <form action="" class="create-allabout">
+                    <label for="">Name</label> <p>This name will appear on your profile</p>
+                    <input type="text" class="allabout-input" required>
+                    <div class="dob-holder">
+                        <label for="text-date">Date of birth</label>
+                        <p>Why do we need your date of birth? Learn more.</p>
+                        <div class="dob-content">
+                            <input type="text" id="text-date" class="date-text" required placeholder="dd">
+                            <select id="selection-month" class="month-selection" required>
+                                <option value="january">Month</option>
+                                <option value="january">January</option>
+                                <option value="february">February</option>
+                                <option value="march">March</option>
+                                <option value="april">April</option>
+                                <option value="may">May</option>
+                                <option value="june">June</option>
+                                <option value="july">July</option>
+                                <option value="august">August</option>
+                                <option value="september">September</option>
+                                <option value="october">October</option>
+                                <option value="november">November</option>
+                                <option value="december">December</option>
+                              </select>
+                            <input type="text" class="year-text" placeholder="yyyy" required> 
+                        </div>
+                        <div class="gender-holder">
+                            <h1>Gender</h1>
+                            <p>We use your gender to help personalize our <br> content recommendations and ads for you.</p>
+                           <div class="gender-content">
+                            <label for="man-radio"><input id="man-radio" name="gender-info" type="radio">Man</label>
+                            <label for="woman-radio"><input id="woman-radio" name="gender-info" type="radio">Woman</label>
+                             <label for="nonbinary-radio"><input id="nonbinary-radio" name="gender-info" type="radio">Non-binary</label>
+                              <label for="somethingelse-radio"><input id="somethingelse-radio" name="gender-info" type="radio">Something else</label>
+                              <label for="prefer-radio"><input id="prefer-radio" name="gender-info" type="radio">Prefer not to say</label>
+                           </div>
+                        </div>
+                    </div>
+                    <button class="next-signupbutton">Next</button>
+                </form>
+            </article>
 
+    </section>
     <footer class="signup-footer">
         <div class="sign-footercontent"> <p>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a>
             and <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a> apply.</p></div>
     </footer>
 
 </body>
-<script src="https://kit.fontawesome.com/92a1fe717a.js" crossorigin="anonymous"></script>s
+<script src="https://kit.fontawesome.com/92a1fe717a.js" crossorigin="anonymous"></script>
+<script src="Javascript/SignupScript.js"></script>
 </html>
