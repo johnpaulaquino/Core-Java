@@ -15,10 +15,10 @@
              <!--Sign Up Step 1-->
         <article class="signup-container page">
             <h1 class="signup-header">Sign up to start Shopping</h1>
-            <form action="" class="email-holder">
+            <div action="" class="email-holder">
                 <label for="signup-email">Email address</label><input type="email" id="signup-email" required>
                 <button class="next-signupbutton">Next</button>
-            </form>
+            </div>
             <div class="signline-container">
                 <span class="signdouble-line"></span>
                 <h1 class="">or</h1>
@@ -61,7 +61,7 @@
         </div>
 
             <div class="icon-textwrapper">
-                <button class="previous-button"><i class="fa-solid fa-chevron-left"></i></button>
+               <i class="fa-solid fa-chevron-left previous-button"></i>
                 <div class="text-createcontainer">
                     <p class="step-1">Step 1 of 3</p>
                     <h2 class="createpass-h1">Create password</h2>
@@ -69,7 +69,7 @@
                
             </div>
 
-            <form action="" class="create-passform">
+            <div class="create-passform">
                 <label for="">Password</label>
                 <input type="password" required>
                 <p>Your password must contain at least</p>
@@ -83,7 +83,7 @@
                     <i class="fa-regular fa-circle"> </i><p>10 characters</p>
                 </div>
                 <button class="next-signupbutton">Next</button>
-            </form>
+            </div>
         </article>
          <!--End of Step 2-->
        
@@ -95,18 +95,17 @@
                 <div class="progress-bar bar"></div>
                 <div class="fill-bar bar"></div>
             </div>
-    
                 <div class="icon-textwrapper2">
-                   <button class="previous-button"><i class="fa-solid fa-chevron-left"></i></button>
+                   <i class="fa-solid fa-chevron-left previous-button"></i>
                     <div class="text-createcontainer2">
                         <p class="step-2">Step 2 of 3</p>
                         <h1 class="createpass-h12">Tell us about yourself</h1>
                     </div>
                    
                 </div>
-                <form action="" class="create-allabout">
+                <div  class="create-allabout">
                     <label for="">Name</label> <p>This name will appear on your profile</p>
-                    <input type="text" class="allabout-input" required>
+                    <input type="text" class="allabout-input" placeholder="Username" required>
                     <div class="dob-holder">
                         <label for="text-date">Date of birth</label>
                         <p>Why do we need your date of birth? Learn more.</p>
@@ -142,8 +141,47 @@
                         </div>
                     </div>
                     <button class="next-signupbutton">Next</button>
-                </form>
+                </div>
             </article>
+        <!--End of Step 2-->
+
+        <!--Start of Step 3-->
+        <article class="terms-condition page">
+            <div class="bar-container">
+                <div class="progress-bar bar"></div>
+                <div class="fill-bar bar"></div>
+            </div>
+                <div class="icon-textwrapper3">
+                   <i class="fa-solid fa-chevron-left previous-button"></i>
+                    <div class="text-createcontainer3">
+                        <p class="step-3">Step 3 of 3</p>
+                        <h1 class="createpass-h13">Terms & Conditions</h1>
+                    </div>
+                </div>
+                    <div div class="create-allabout">
+                        <div class="terms-div">
+                           <div class="terms-content">
+                                <label><input type="checkbox" class="terms-input">I would prefer not to receive 
+                                    marketing messages from GDJshop</label>
+                            </div>
+                            
+                        </div>
+                        <div class="terms-div">
+                            <div class="terms-content">
+                                <label><input type="checkbox" class="terms-input">Share my registration data with GDJshop's content providers
+                                     for marketing purposes.</label>
+                            </div>
+                        </div>
+                        <div class="terms-div">
+                            <div class="terms-content">
+                                <label><input type="checkbox" class="terms-input">I agree to the <a href="">GDJshop Terms and Conditions of Use</a>
+                                     and <a href="">Privacy Policy</a>.</label>
+                            </div>
+                            
+                        </div>
+                        <button class="next-signupbutton">Next</button>
+                    </div>
+        </article>
 
     </section>
     <footer class="signup-footer">

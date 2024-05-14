@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var nextButtons = document.querySelectorAll('.next-signupbutton');
     var prevButtons = document.querySelectorAll('.previous-button'); // Select all "Back" buttons
     var emailInput = document.getElementById("signup-email").input;
+    
     nextButtons.forEach(function(button, index) {
         button.addEventListener('click', function() {
             var currentPage = pages[index];
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
     prevButtons.forEach(function(button, index) {
         button.addEventListener('click', function() {
             var currentPage = pages[index + 1]; // Adjust index to current page
@@ -37,7 +39,7 @@ function navigate(currentPage, targetPage) {
     currentPage.style.opacity = "0";
     setTimeout(function() {
       currentPage.style.display = "none";
-      targetPage.style.display = "block";
+      targetPage.style.display = "flex";
       targetPage.style.opacity = "1";
     }, 500);
   }

@@ -130,7 +130,7 @@ margin: 30px 0 40px 0;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: -200px;
+    margin-bottom: 130px;
 }
 .create-passform{
     display: flex;
@@ -157,24 +157,24 @@ margin: 30px 0 40px 0;
 }
 .progress-bar{
     width: 600px;
-    height: 5px;
+    height: 4px;
     border-radius: 25px;
     background-color: antiquewhite;
     margin-top: 20px;
 }
 .fill-bar{
     width: calc(500px/3);
-    height: 5px;
+    height: 4px;
     border-radius: 25px;
     background-color: green;
-    margin-top: -5px;
-    
+    margin-top: -4px;
 }
 .previous-button{
     font-size: 2rem;
 }
 .create-passform input[type="password"]{
 height: 50px;
+width: 450px;
 margin-top: 20px;
 margin-bottom: 10px;
 font-size: 1.3rem;
@@ -199,25 +199,19 @@ border: 2px solid;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: -200px;
+}
+.icon-textwrapper2{
+    display: flex;
+    align-items: center;
 }
 .icon-textwrapper2{
     display: flex;
     align-items: center;
     margin-bottom: 25px;
-    margin-right: 350px;
-
-}
-.icon-textwrapper2{
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
-    margin-right: 350px;
+    margin-right: 300px;
     }
 .icon-textwrapper2 i{
     cursor: pointer;
-    font-size: 1.5rem;
-
 }
 .text-createcontainer2{
     display: flex;
@@ -230,8 +224,7 @@ border: 2px solid;
 .create-allabout .allabout-input{
     width: 450px;
     height: 50px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 1.3rem;
     outline: none;
     color: #FFFF;
@@ -239,7 +232,7 @@ border: 2px solid;
     border: 2px solid;
     text-indent: 20px;
     }
-    .dob-content{
+.dob-content{
         display: flex;
         align-items: center;
         height: 50px;
@@ -292,11 +285,57 @@ margin: 20px 0 ;
     margin-bottom: 10px;
     font-size: 1.2rem;
 }
+/* End of the second step */
 
+
+/* Start of the step 3 */
+.terms-condition{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.terms-div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    width: 450px;
+    height: 100px;
+    background-color: #292929;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 5px;
+}
+.terms-content{
+padding: 20px;
+}
+.icon-textwrapper3{
+    display: flex;
+    align-items: center;
+}
+.icon-textwrapper3{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-right: 300px;
+    }
+.icon-textwrapper3 i{
+    cursor: pointer;
+}
+.text-createcontainer3{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.text-createcontainer3 p{
+    margin-top: 80px;
+}
+/* End of the step 3 */
 /* This is to hide all the element of the section except the first child */
  .page{
     display: none;
 }
-.signup-page >*:first-child{  
+.signup-page >*:nth-child(4){  
    display: flex;
 }
