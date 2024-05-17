@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- <link rel="stylesheet" href="CSS/styles.css"> -->
+    <link rel="stylesheet" href="CSS/cart.css">
+</head>
+<body>
+    <nav class="nav">
+        <span class="logo" ><a class="logo" href="index.html">Logo</a></span>
+            <ul>
+                <li class="list2">
+                    <div class="category"> 
+                        <div class="line-bar">
+                            <select id="categ"class="categ">
+                                <option value="Categories">All Categories</option>
+                                <option value="Laptop">Laptop</option>
+                                <option value="PC">PC </option>
+                                <option value="Accessories">Laptop & PC Accessories</option>
+                                <option value="">Laptop & PC </option>
+                          </select>
+                          <span class="line"></span>
+                        </div>
+                      <input class="search" type="email" placeholder="Search Anything you want"> 
+                     <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div> 
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <div class="cart-sign">
+                    <a href="cart.html"><img src="Background/shopping-bagWhite.png" class="cart" alt=""></a>  
+                    <a href="Login.html"> <button class="signin" >Sign In</button></a>
+                </div>
+               
+            </ul>
+    </nav>
+    <section class="section-cart" id="cart-section">
+        <div class="cartcontent-holder">
+            <img src="Background/empty-cart.png" alt="Empty Cart">
+                <div class="cart-text">
+                    <h1>Oops, Your Shopping Cart is Empy</h1>
+                    <p>Browse our awesome deals now!</p>
+                    <button>Go Shopping Now</button>
+                </div>
+            </img>
+        </div>
+    </section>
+</body>
+</html>
