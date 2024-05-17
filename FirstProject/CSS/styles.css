@@ -15,7 +15,6 @@ body{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
- 
 }
 /* For the Header Content*/
 .nav{
@@ -26,7 +25,7 @@ body{
     justify-content: space-between;
   margin: 40px 0;
     color: #FFFFFF;
-   /* Set a maximum width for the container */
+
 }
 .logo{
     cursor: pointer;

@@ -60,6 +60,7 @@ align-items: center;
     background-color: #F72F09;
     color: #FFFF;
     font-size: 1rem;
+    cursor: pointer;
 }
 .sameclass{
     display: flex;
@@ -130,7 +131,7 @@ margin: 30px 0 40px 0;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 130px;
+    margin-bottom: 250px;
 }
 .create-passform{
     display: flex;
@@ -199,6 +200,7 @@ border: 2px solid;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 .icon-textwrapper2{
     display: flex;
@@ -294,7 +296,7 @@ margin: 20px 0 ;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 250px;
 }
 .terms-div{
     display: flex;
@@ -332,10 +334,15 @@ padding: 20px;
     margin-top: 80px;
 }
 /* End of the step 3 */
+
+.backto-login{
+    display: flex;
+    align-items: center;
+}
 /* This is to hide all the element of the section except the first child */
  .page{
     display: none;
 }
-.signup-page >*:nth-child(4){  
+.signup-page >*:nth-child(5){  
    display: flex;
 }

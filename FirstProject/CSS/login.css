@@ -100,6 +100,7 @@ margin: 20px;
     text-indent: 20px;
     margin-bottom: 20px;
     margin-top: 10px;
+    padding-right: 45px;
 }
 .email-pass{
     display: flex;
@@ -109,6 +110,7 @@ margin: 20px;
 input[type=checkbox]{
     width: 25px;
     height: 25px;
+   
 }
 .log-butt1{
 height: 60px;
@@ -131,12 +133,22 @@ background-color: rgba(255, 255, 255, 0.30);
 }
 .log-signup{
     margin-bottom: 100px;
-    color:  rgba(255, 255, 255, 0.50);}
+    color:  rgba(255, 255, 255, 0.50);
+}
+    
 .log-signup a{
     text-decoration: underline;
 }
 .forgot-pass{
     text-decoration: underline;
+}
+.pasword-container i{
+    position: absolute;
+    bottom: -60px;
+    transform: translateX(-40px);
+    cursor: pointer;
+    user-select: none;
+    color: #060606;
 }
 /* End of the Log in page */
 
