@@ -1,0 +1,129 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: content-box;
+    scroll-behavior: smooth;
+    scroll-snap-type: none;
+    transition: all 0.4s;
+    margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.navigator img{
+    width: 25px;
+    height: 25px;
+}
+.navigator{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.homepage{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    background-color: #D3C5B8;
+
+}
+.homepage img{  
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.homepage div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 100vh;
+    background-color: #D3C5B8;
+}
+.content-holder h1{
+    text-align: center;
+   font-size: 2.9rem;
+   color: #534437;
+}
+.content-holder p{
+    text-align: center;
+   font-size: 1.5rem;
+   color: #534437;
+}
+.content-holder button{
+    width: 340px;
+ height: 50px;
+ border-radius: 5px;
+ background-color: #42271E;
+ font-size: 1.5rem;
+ color: #fff;
+letter-spacing: 5px;
+cursor: pointer;
+}
+/* End of the homepage section */
+.most-wanted{
+    width: 100%;
+    height: 100%;
+}
+.logo-holder{
+    height: 30vh;
+    margin: 30px;
+    background-color: #42271E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.product-holder{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+}
+.product-content{
+    width: 250px;
+    height: 400px;
+}
+.img-holder{
+    width: 250px;
+    height: 250px;
+}
+.img-holder img{
+    width: 250px;
+    height: 250px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.price button{
+    width: 120px;
+    background-color: #fff;
+    outline: none;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.find-match{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #D3C5B8;
+}
+.content-holder img{
+    height: 100vh;
+    object-fit: cover;
+}
+.right-content{
+    width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+    background-color: #D3C5B8;
+}
