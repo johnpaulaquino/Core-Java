@@ -338,11 +338,24 @@ padding: 20px;
 .backto-login{
     display: flex;
     align-items: center;
+    flex-direction: column;
+}
+.backto-login img{
+ width: 250px;
+ height: 250px;
+ margin-bottom: 20px;
+}
+.backto-login h1 {
+    color:  rgba(255, 255, 255, 0.50);
+}
+.backto-login a{
+    text-decoration: underline 2px;
+    text-decoration:
 }
 /* This is to hide all the element of the section except the first child */
  .page{
     display: none;
 }
-.signup-page >*:nth-child(5){  
+.signup-page >*:nth-child(1){  
    display: flex;
 }
