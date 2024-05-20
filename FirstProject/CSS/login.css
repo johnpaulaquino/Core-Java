@@ -17,6 +17,16 @@
     display: flex;justify-content: center;
     background-color: #060606;
 }
+.page-login a{
+  color: #FFF;
+  text-decoration: none;
+  transition: all 0.5s linear;
+}
+.page-login a:hover{
+    color: #d33f34;
+    text-decoration: underline;
+    transition: all 0.5s linear;
+  }
 .login-holder{
     max-width: 800px;
     width: 100%;
@@ -49,7 +59,20 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    transition: all 0.5s;
 }
+.log-butt:hover{
+    width: 450px;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.70);
+}
+
 .log-butt .buttcontent-holder{
     display: flex;
     align-items: center;
@@ -123,7 +146,20 @@ border-radius: 5px;
 font-size: 1.5rem;
 cursor: pointer;
 color: #FFFF;
+transition: all 0.5s linear;
 }
+.log-butt1:hover{
+    height: 60px;
+    border-radius: 5px;
+    background-color: #d33f34;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #FFFF;
+    }
 .bottom-seperator{
     display: block;
     width: 650px;
@@ -135,10 +171,7 @@ background-color: rgba(255, 255, 255, 0.30);
     margin-bottom: 100px;
     color:  rgba(255, 255, 255, 0.50);
 }
-    
-.log-signup a{
-    text-decoration: underline;
-}
+
 .forgot-pass{
     text-decoration: underline;
 }
@@ -163,6 +196,10 @@ background-color: rgba(255, 255, 255, 0.30);
     justify-content: center;
 }
 .log-footer a{
- text-decoration: underline;
- color:  rgba(255, 255, 255, 0.50);
+ color:  rgba(255, 255, 255);
+ transition: all 0.5s linear;
 }
+.log-footer a:hover{
+    text-decoration: underline;
+    color:  rgb(219, 69, 58);
+   }

@@ -9,9 +9,14 @@ body{
     color: #FFFFFF;
     transition: all 0.4s;
 }
-a{
+a, h1 a{
     text-decoration: none;
     color: #FFFFFF;
+    transition: all 0.5s linear;
+}
+p a:hover, h1 a:hover{
+    text-decoration: underline;
+    color:  rgb(219, 69, 58);
 }
 .signup-page{
     display: flex;
@@ -61,6 +66,16 @@ align-items: center;
     color: #FFFF;
     font-size: 1rem;
     cursor: pointer;
+    transition: all 0.5s linear;
+}
+.next-signupbutton:hover{
+    width: 450px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #d33f34;
+    color: #FFFF;
+    font-size: 1rem;
+    cursor: pointer;
 }
 .sameclass{
     display: flex;
@@ -69,13 +84,49 @@ align-items: center;
     height: 55px;
     margin-bottom: 20px;
     border-radius: 5px;
-    background-color: #111010;
-    color: #FFFF;
+    color: #111010;
     outline: none;
-    border: 2px solid #FFFF;
     cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.5s linear;
 }
-.signcontent-holder{
+.sameclass:hover{
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 55px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: #111010;
+    outline: none;
+    background-color: #c4c4c4;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.sameclass .fb-icon{
+    color: rgb(8, 102, 255);
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.sameclass .apple-icon{
+
+    color: rgb(0,0,0);
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.sameclass .google-icon{
+
+    color: rgb(229, 62, 49);
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.signcontent-holder{                                
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,7 +149,7 @@ background-color: rgba(255, 255, 255, 0.30);
     height: 1px;
     background-color: rgba(255, 255, 255, 0.30);
     margin: 20px;
-    }
+}
 .signline-container{
 width: 480px;
 height: 50px;
@@ -347,9 +398,6 @@ padding: 20px;
 }
 .backto-login h1 {
     color:  rgba(255, 255, 255, 0.50);
-}
-.backto-login a{
-    text-decoration: underline 2px;
 }
 /* This is to hide all the element of the section except the first child */
  .page{

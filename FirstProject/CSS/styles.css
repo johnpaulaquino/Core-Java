@@ -1,5 +1,8 @@
 
 /* For the body content*/
+*{
+    scroll-behavior: smooth;
+}
 body{
     margin:0;
     padding: 0;
@@ -62,11 +65,22 @@ a{
     height:40px;
     margin-right: 50px;
     border-radius: 5px;
-    border: 2px solid #E12D1F;
     background: #E12D1F;
   cursor: pointer;
   color: #FFFFFF;
   font-size: 1rem;
+}
+.signin:hover{
+    width: 150px;
+    height:40px;
+    margin-right: 50px;
+    border-radius: 5px;
+    border: 2px solid #E12D1F;
+    background: #111010;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 1rem;
+  transition: all 0.5s linear;
 }
 .search{
     width: 750px;
@@ -299,6 +313,13 @@ justify-content: space-between;
     margin: 30px;
     margin-right: 70px;
 }
+.footer-contents ul li a{
+    text-decoration: none;
+}
+.footer-contents ul li a:hover{
+    transition: all 0.4s ease ;
+    text-decoration: #E12D1F underline  3px;
+}
 .footercontent-holder{
    display: flex;
    flex-direction: column;
@@ -332,7 +353,6 @@ text-align: justify;
     height: 40px;
     margin: 10px;
 }
-
 .appstore-button{
     width: 170px;
     height: 50px;
@@ -396,6 +416,29 @@ color: #FEAB03;
     background-color: #FEAB03;
     font-size: 1rem;
     cursor: pointer;
+    transition: color 0.2s linear;
+}
+.subscribe button:hover{
+    background-color: #f8b734;
+    cursor: pointer;
+}
+.subscribe button::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: transform 0.2s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.subscribe button::before{
+    transform: scaleX(0);
+}
+.subscribe button:hover::before{
+    transform: scaleX(0);
 }
 .subscribe input::placeholder{
  text-indent: 10px;
