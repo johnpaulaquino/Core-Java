@@ -1,6 +1,6 @@
                     ************PRINT CALENDAR************
 This activity is need to print the calendar in console, it will test  your knowledge in your programming language.
-The outout Will be in the picture below:
+The outout will shown below:
 
 ![Screenshot_28](https://github.com/johnpaulaquino/My-Coding-Journey/assets/123707274/a44b17e2-3de6-462a-8017-aeef917e0736)
 ![Screenshot_29](https://github.com/johnpaulaquino/My-Coding-Journey/assets/123707274/74dee765-c3c0-4f05-a1f9-28549a8a2794)
