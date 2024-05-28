@@ -30,8 +30,10 @@ public class CopyFileWay2 {
         FileChannel sourceChannel = FileChannel.open(original.toPath());
         FileChannel targetChannel = FileChannel.open(copyFile.toPath(), java.nio.file.StandardOpenOption.CREATE, java.nio.file.StandardOpenOption.WRITE);
         sourceChannel.transferTo(0, sourceChannel.size(), targetChannel);
+        //Closing the File channels
         sourceChannel.close();
         targetChannel.close();
+
         System.out.println("File content has been copied to "+copyFile.getName()+"!");
     }
 }

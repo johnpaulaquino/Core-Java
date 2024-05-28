@@ -24,12 +24,13 @@ public class CopyFileWay1 {
             copyFile.createNewFile();
             System.out.println("File Created!");
         }
+        // Create a byte size
         byte [] myBytes = new byte[1024];
         int length;
         while ((length = fileInputStream.read(myBytes))> 0){
-              fileOutputStream.write(myBytes,0,length);
+              fileOutputStream.write(myBytes,0,length); // Copy the conent of the original file into new File.
         }
-
+       //Closing the Files
         fileInputStream.close();
       fileOutputStream.close();
         System.out.println("File content of "+ original.getName()+ " is successfully copied!");

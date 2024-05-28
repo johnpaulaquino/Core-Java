@@ -6,11 +6,11 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class WriteToFile {
-  /*  Create a program that writes a string
+  /* Problem : Create a program that writes a string
     to a text file.*/
 
     public static void main(String[] args) throws IOException {
-        File file = new File("Sample.txt");
+        File file = new File("GreeksForGreeksChallenge/src/Sample.txt");
         FileWriter fileWriter;
         Scanner scanner = new Scanner(System.in);
         if (file.exists()){
