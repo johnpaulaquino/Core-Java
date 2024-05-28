@@ -11,14 +11,13 @@ public class Exercise3 {
     "AbbA" , "DaD" , etc these are some examples of Palindrom String.*/
 
     public static void main(String[] args) {
-        String input = "AbbA";
+        String input = "Geeks";
 
         System.out.println(isaPalindrome(input));
     }
     static boolean isaPalindrome(String input){
    StringBuilder builder = new StringBuilder();
    int length = input.length();
-   boolean flag = false;
    int checker =0;
    int lastIndex =input.length();
    while(checker!=input.length()){
@@ -27,11 +26,7 @@ public class Exercise3 {
        length--;
          checker++;
    }
-       if (builder.toString().equalsIgnoreCase(input)){
-           flag = true;
-       }
-
-        return flag;
+        return (builder.toString().equalsIgnoreCase(input));
     }
 
 }
