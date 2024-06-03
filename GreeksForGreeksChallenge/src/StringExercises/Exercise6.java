@@ -33,5 +33,4 @@ String input = "GeeksForGeeks";
         }
         return buffer.toString(); // return the strings with swapped two pair of characters
     }
-
 }
