@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Icon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Menu Icon</h1>
+    <section class="icon-menu-holder">
+        <div class="span-holder" id="icon">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+      
+    </section>
+    <script>
+   const icon = document.getElementById('icon');
+
+   icon.addEventListener('click', () => {
+   
+    if(icon.classList.contains('cross')){
+        
+        icon.classList.remove('cross');
+        icon.classList.add('normal');
+    }else{
+        icon.classList.remove('normal');
+        icon.classList.add('cross');
+    }
+   });
+    </script>
+</body>
+</html>

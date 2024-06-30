@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+body{
+position: absolute;
+    left: 20%;
+    top: 10%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    
+}
+.content{
+    background-color: rgb(6,54,223);
+background: linear-gradient(90deg, rgba(70, 98, 172,0.9407407407407408) 20%, rgba(76, 169, 193,0.8864197530864197) 100%, rgba(0,212,255,0) 100%);
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.onehundred-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.one{
+    position: absolute;
+    width: 40px;
+    height: 150px;
+    background-color: #fff;
+    bottom:20%;
+    border-radius: 5px;
+    left: 25%;
+    top: 30%;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
+
+}
+.anchor-one{
+position: absolute;
+width: 40px;
+height: 70px;
+left: 18%;
+top: 30%;
+border-radius: 5px;
+background-color: #fcf4f4e3;
+transform: rotate(60deg);
+}
+.zero{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(248, 248, 248);
+    border-radius: 100%;
+    left:30%;
+    top: 30%;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
+}
+.zero1{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(248, 248, 248);
+    border-radius: 100%;
+    left:55%;
+    top: 30%;
+}
+.donut1{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(70, 98, 172);
+    border-radius: 100%;
+    left:37%;
+    top: 36%;
+}
+.donut2{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(76, 169, 193);
+    border-radius: 100%;
+    left:62%;
+    top: 36%;
+}
+.day{
+    position: absolute;
+    left: 25%;
+    top: 45%;
+    letter-spacing: 45px;
+    font-size: 5rem;
+    color: #fff;
+}
+.css{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    left: 25%;
+    top: 65%;
+    font-size: 2rem;
+    letter-spacing:10px ;
+    color: #fff;
+}
+.challenge{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    left: 45%;
+    top: 65%;
+    letter-spacing:3px;
+    font-size: 2rem;
+    color: #fff;
+}

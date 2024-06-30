@@ -1,0 +1,970 @@
+:root{
+    --button-backgroun:#182B8D;
+    --mainBackground:#FFF8F0;
+    --mainFontColor:#010101;
+    --circle-background:#FCEAD4;
+    --check-icon-color:#83B740;
+    --check-out-button-BG:#FF7648;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding:0;
+    margin: 0;
+    box-sizing: content-box;
+    background-color: var(--mainBackground);
+}
+/* .circle{
+width: 40%;
+height: 40%;
+border-radius: 100%;
+padding-bottom: 10%;
+border: none;
+background-color: var(--circle-background);
+position:fixed;
+right: -28%;
+top: -28%;
+z-index: -1;
+transform:rotate(50deg);
+} */
+#mainDocument{
+    display: grid;
+    grid-template-areas: "head head head"
+    "section section section"
+    "foot foot foot";
+    gap: 2px;
+    position: relative;
+    background-color: #FFF;
+}
+/* This design for Header */
+#header{
+    grid-area: head;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--mainBackground);
+}
+#nav-bar{
+    display: flex;
+    align-items: center;
+ justify-content: space-evenly;
+    width: 100%;
+    z-index: 1;
+}
+#nav-bar .leftSide{
+    width: auto;
+    display: flex;
+justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+#nav-bar ul{
+    display: flex;
+    align-items: center;
+}
+#nav-bar a{
+    text-decoration: none;
+    color: var(--mainFontColor);
+}
+#nav-bar li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+.search-icon{
+    font-size: 1.5rem;
+    margin-left: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+#nav-bar .leftSide input{
+    display: inline;
+    width: 260px;
+    height: 45px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 0 20px;
+    font-size: 1.3rem;
+    border: 1px solid ;
+ display: none;
+}
+#header-img{
+    width: 150px;
+    height: 150px;
+}
+/* This is the end of the left side od the header or nav bar */ 
+
+/* This design is for the right side of the nav bar or header */
+.rightSide{
+width: 30%;
+    display: flex;
+justify-content: space-evenly;
+align-items: center;
+font-size: 1.3rem;
+}
+/* This is for the cart and the total number of items in the cart */
+.cart-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  /* This is for cart */
+  .cart {
+    font-size: 24px;
+    color: #010101;
+    cursor: pointer;
+
+  }
+  /* This is for total number of items in cart */
+  .number-of-items {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #010101;
+    color: white;
+    font-size: 12px;
+    padding: 2px auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+  }
+  /* This is for the Button Checkout */
+  .rightSide #checkout{
+ width: 150px;
+ height: 50px;
+ margin: 0 20px;
+ background-color: var(--button-backgroun);
+ cursor: pointer;
+ color: #FCEAD4;
+ font-size: 1.3rem;
+ border-radius: 5px;
+ outline: none;
+  }
+/* This is the end of the right side of the content in the nav of header */
+
+
+
+/* This is for the main content */
+#mainContent{
+    grid-area: section;
+    height: auto;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+/* This is for the hero page of the homepage*/
+#heroPage{
+    z-index: 1;
+    display: grid;
+    background-color: var(--mainBackground);
+    grid-template-columns: minmax(auto, 1.5fr) minmax(min-content, 1.7fr) minmax(auto, 0.7fr);
+}
+
+
+/* This is for the left content of the homepage or hero page */
+.hero-left-content{
+    margin-left: 100px;
+    margin: 100px 0 0 100px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.hero-left-content h1{
+    font-size: 3rem;
+    margin: 0;
+}
+.hero-left-content h4{
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.features-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    margin-top: -30px;
+    padding: 0;
+}
+.features-container i{
+    margin-right: 20px;
+    color: var(--check-icon-color);
+    
+}
+.hero-left-content > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.hero-left-content > ul > li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* This is for the mid content of the homepage or hero page */
+.hero-mid-content{
+    max-width: auto;
+   position: relative;
+}
+.mid-circle-yellow{
+    width: 70%;
+    height: 70%;
+    border-radius: 100%;
+    padding-left: 5%;
+    position: absolute;
+    background-color: #FECD10;
+    bottom: 0%;
+    left: 0%;
+}
+#leave{
+position: absolute;
+bottom: -20%;
+left: -10%;
+transform: rotate(-90deg);
+width: 100%;
+height: 100%;
+}
+#leave1{
+    position: absolute;
+    bottom: 25%;
+    left: 0%;
+    transform: rotate(-170deg);
+    width: 100%;
+    height: 50%;
+}
+.mid-circle-pink{
+    width: 40%;
+    height: 40%;
+    border-radius: 100%;
+    padding-left: 5%;
+    position: absolute;
+    background-color: #FFCDCC;
+    bottom: 45%;
+    left: 40%;
+}
+.mid-circle-small{
+    width: 10%;
+    height: 10%;
+    padding-left: 2%;
+    border-radius: 100%;
+    position: absolute;
+    background-color: #FDC477;
+    bottom: 75%;
+    right: 20%;
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    align-items: center;
+}
+#adwoa{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 10%;
+    z-index: 1;
+}
+#pai{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 25%;
+    left: -30%;
+    transform: rotate(-30deg);
+}
+#Artistry{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 25%;
+    left: -5%;
+    transform: rotate(10deg);
+}
+#osmia{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 35%;
+    left: 10%;
+    transform: rotate(50deg);
+}
+/* This is for the right content of the homepage or hero page */
+.hero-right-content{
+margin: 100px 30px 0 0;
+display: flex;
+flex-direction: column;
+z-index: 1;
+}
+.hero-right-content h1{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.hero-right-content p{
+    font-size: 1.3rem;
+ margin: 20px 0 15px 0;
+ font-weight: bold;
+}
+.hero-right-content .ratings ul{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+margin: 0;
+padding: 0;
+}
+.hero-right-content .ratings li{
+    margin-right: 10px;
+    list-style-type: none;
+    color: var(--check-out-button-BG);
+}
+.hero-right-content .productDesc{
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+.explore-shop{
+    display: flex;
+    align-items: center;
+}
+.explore-shop h2{
+font-size: 1.3rem;
+margin-right: 10px;
+cursor: pointer;
+}
+.explore-shop i{
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #858484;
+}
+.add-to-cart-details{
+    width: 100%;
+    display: flex;
+}
+#add-to-cart{
+width: 50px;
+height: 50px;
+border-radius: 100%;
+color: #FFF8F0;
+font-size: 1.3rem;
+cursor: pointer;
+ background-color: var(--button-backgroun);
+ margin-right: 20px;
+ margin-bottom: 100px;
+ border: none;
+}
+.button-cart-add #add-to-cart{
+    cursor: pointer;
+}
+#details{
+width: 120px;
+height: 45px;
+border-radius: 5px;
+cursor: pointer;
+border: none;
+}
+.next-button-container{
+    width: 100%;
+    display: flex;
+    position: relative;
+    height: 5vh;
+    justify-content: space-between;
+}
+.next-button-container i{
+font-size: 2.5rem;
+cursor: pointer;
+margin: 0 20px;
+}
+.next-circle{
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+    padding-bottom: 15%;
+    position: absolute;
+    background-color: #FAE9D3;
+    margin-right: 30px;
+    z-index: -1;
+}
+.next-circle1{
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+    padding-bottom: 15%;
+    position: absolute;
+    background-color: #FAE9D3;
+    z-index: -1;right: 0;
+}
+/* This is the end of the Hero  section */
+
+
+/* This is the start of the second page */
+.second-page{
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
+    position: relative;
+}
+.second-left-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 40% auto 20%;
+}
+.second-item-container{
+    width: 300px;
+    height: 300px;
+    background-color: var(--mainBackground);
+ border-radius: 20px;
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ margin-left: 50px;
+}
+.second-page-circle{
+    width: 80%;
+    height: 80%;
+    background-color: #77C4B2;
+    position: absolute;
+    border-radius: 100%;
+    top: -45%;
+}
+.second-page-circle img{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: -40%;
+    left: -25%;
+}
+.second-page-circle1{
+    width: 80%;
+    height: 80%;
+    background-color: #FFCDCC;
+    position: absolute;
+    border-radius: 100%;
+    top: -45%;
+}
+.second-page-circle1 img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -25%;
+    left: -10%;
+}
+.bottom-description-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 30%;
+    width: 80%;
+    margin: 0 auto;
+}
+.prodcut-name-holder{
+    display: flex;
+    width: 100%;
+    align-items: center;
+justify-content: space-between;
+font-size: 1.5rem;
+}
+.second-page-ratings ul{
+    width: 100%;
+    display: flex;
+   flex-direction: row;
+   margin: 0;
+   padding: 0;
+   margin-top: -25px;
+list-style-type: none;
+margin-bottom: 40px;
+}
+.explore-shop{
+    font-size: 1.3rem;
+}
+.item-price{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.second-page-cart{
+    width: 25%;
+    height: 25%;
+    background-color: #010101;
+    border-radius: 15px 15px 100%;
+    display: flex;
+    align-items: center;
+    color: #FFFF;
+    justify-content: center;
+    right: 0;
+    bottom: -15%;
+    font-size: 1.3rem;
+    position: absolute;
+    cursor: pointer;
+}
+/* This is the end of the left content for second page */
+
+/* THis is the start of the right content for the second page */
+.second-right-content{
+    margin: 15% 100px;
+}
+.second-right-content h1{
+font-size: 2rem;
+font-weight: bold;
+}
+.second-right-content h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.second-rigth-desc{
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+    text-align: justify;
+}
+.shop_nowButton{
+    width: 150px;
+    height: 45px;
+    border-radius:5px;
+    border: none;
+    background-color: var(--check-out-button-BG);
+    color: #FFFF;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+/* THis is the end of the right content for the second page */
+
+/* This is the start of the third page */
+#third-page-content{
+    display: grid;
+    grid-template-columns: minmax(min-content, 2fr) minmax(min-content, 1fr);
+    background-color: #FFF;
+}
+.third-left-content{
+  margin: 50px 0 50px 50px;
+}
+.third-left-content h1{
+ font-size: 2rem;  
+ font-weight: bold;  
+}
+.third-left-content p{
+    font-size: 1.3rem;  
+    text-align: justify;
+    line-height: 1.8rem;
+}
+.third-right-content img{
+    width: 800px;
+    height: 500px;
+    margin:0 50px;
+}
+/* This is the end of the third page content */
+
+/* This is the start of the fourth page content */
+
+#fourth-page-content{
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    display: grid;
+    grid-template-areas: "title title title"
+    "fourth-content fourth-content fourth-content";
+    gap: 130px;
+    position: relative;
+    scroll-snap-align: 0;
+    width: 100%;
+}
+.fourth-content-header{
+    grid-area: title;
+    font-size: 3rem;
+   margin-left: 50px;
+}
+.fourth-products-content{
+    margin: 5% 0;
+    position: relative;
+    grid-area:  fourth-content;
+    display: grid;
+    gap: 10px;
+    grid-template-columns:minmax(min-content,1fr) repeat(4, minmax(min-content,3fr)) minmax(min-content,1fr);
+}
+.fourth-item-container{
+    width: 250px;
+    padding: 0 10px;
+    height: 300px;
+    background-color: var(--mainBackground);
+ border-radius: 20px;
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+.fourth-page-circle1{
+    width: 90%;
+    height:75%;
+    background-color: #FFCDCC;
+    position: absolute;
+    border-radius: 100%;
+    top: -45%;
+}
+.fourth-page-circle1 img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -35%;
+    left: -10%;
+}
+.bottom-description-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 30%;
+    width: 80%;
+    margin: 0 auto;
+}
+.prodcut-name-holder{
+    display: flex;
+    width: 100%;
+    align-items: center;
+justify-content: space-between;
+font-size: 1.5rem;
+}
+.fourth-page-ratings ul{
+    width: 100%;
+    display: flex;
+   flex-direction: row;
+   margin: 0;
+   padding: 0;
+   margin-top: -25px;
+list-style-type: none;
+margin-bottom: 40px;
+}
+.explore-shop{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.item-price{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.fourth-page-cart{
+    width: 25%;
+    height: 25%;
+    background-color: #010101;
+    border-radius: 15px 15px 100%;
+    display: flex;
+    align-items: center;
+    color: #FFFF;
+    justify-content: center;
+    right: 0;
+    bottom: -15%;
+    font-size: 1.3rem;
+    position: absolute;
+    cursor: pointer;
+}
+.fourth-next-button{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: var(--check-out-button-BG);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+}
+/* This is the start of the fourth page content */
+
+/* This is the start of the fifth section */
+#fifth-page-content{
+    display: grid;
+    background-color: #FFFFFF;
+    grid-template-columns: repeat(2, minmax(min-content,1fr));
+}
+.fifth-left-content{
+    margin: 50px;
+}
+.fifth-left-content img{
+  width: 100%;
+  height: 100%;
+}
+.fifth-right-content{
+margin: 100px 100px ;
+}
+.fifth-right-content>h1{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+.fifth-right-content>p{
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    line-height: 1.9rem;
+    text-align: justify;
+}
+.app-store-button{
+width: 200px;
+background-color: #010101;
+color: #FFF;
+border-radius: 5px;
+cursor: pointer;
+margin-right: 20px;
+}
+.store-button-holder{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+gap: 1rem;
+}
+.store-button-left{
+    margin: auto;
+    font-size: 2.5rem;
+}
+.store-button-right p{
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.store-button-right h1{
+    margin: 0;
+    font-size: 1.3rem;
+    text-align: center;
+}
+/* This is the end of the fifth section */
+
+/* THis is the start of the sixth page */
+#sixth-page-content{
+    display: grid;
+    background-color: #FFFF;
+    grid-template-columns: minmax(min-content,3fr) minmax(min-content,1fr) minmax(min-content,3fr);
+}
+.sixth-left-Content{
+    margin: 50px;
+}
+.sixth-left-Content>h1{
+   font-size: 3rem;
+   margin-bottom: 0;
+}
+.sixth-left-Content>p{
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    text-align: justify;
+ }
+ .sixth-left-Content>i{
+    margin-top: 0;
+    font-size: 3rem;
+    color: #C7C7C7;
+    float: right;
+ }
+ .user-info-holder{
+    display: grid;
+grid-template-columns: 1fr 4fr;
+align-items: center;
+ }
+.image-holder{
+    width: 50px;
+    height: 50px;
+}
+#user-profile-pic{
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 100%;
+object-position: center;
+}
+.sixth-mid-content{
+    display: flex;
+    align-items: flex-end;
+}
+.mid-next-circle1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: var(--check-out-button-BG);
+    margin-right: 50px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.mid-next-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #b4afac;
+    margin-right: 50px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.sixth-right-content{
+    width: 100%;
+margin: auto -30px;
+}
+.video-holder{
+   
+    aspect-ratio: 16/9;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#video{
+    width: 100%;
+    height: 100%;
+}
+/* This is the end of the Sixth page */
+
+/* This is the start of the seventh page */
+
+.seventh-content-holder{
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 40vh;
+   background-color: #FCEAD4;
+   margin:50px  auto;
+   padding-bottom: 50px;    
+}
+.seventh-content-holder h1{
+   text-align: center;
+   font-size: 3rem;
+}
+.seventh-input-holder{
+    width: 100%;
+    position: relative;
+}
+#email{
+   width: 60%;
+   height: 70px;
+  padding: 0 180px 0 70px;
+  font-size: 1.3rem;
+  background-color: #FFF;
+  border: none;
+  border-radius: 5px;
+}
+.seventh-content-holder i{
+    position: absolute;
+    font-size: 2rem;
+    color: #b4afac;
+    bottom: 25%;
+    left: 3%;
+}
+#submit{
+    position: absolute;
+    right: 0;
+    bottom: 15%;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--check-out-button-BG);
+}
+/* This is the end of the seventh page content */
+
+/* This is the start of the eight page content */
+
+#eigth-page-content{
+width: 100%;
+max-height: 20vh;
+
+}
+.eight-content-holder{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+}
+
+/* This is the end of the eight page content */
+
+/* This is the end of the main Content Design */
+
+#footer{
+    grid-area: foot;
+    background-color: #F9F9F9;
+}
+
+.footer-quick-links{
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 2fr);
+    margin: 50px;
+    font-size: 1.3rem;
+}
+.footer-logo-container{
+    width: 150px;
+    height: 150px;
+}
+.footer-logo-contents{
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+   padding: 0;
+}
+.footer-logo-contents{
+    margin: 0;
+    padding: 0;
+}
+#logo-container-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 0;
+}
+.footer-logo-text{
+    padding: 0;
+    margin-top: 40px;
+}
+.remove-space{
+    margin: 0;
+}
+.footer-email-holder, .footer-phone-holder, .footer-soc-icon, .footer-card-holder{
+    display: flex;
+    align-items: center;
+   margin-bottom: 10px;
+}
+.footer-email-holder i, .footer-phone-holder i,.footer-soc-icon i, .footer-card-holder img{
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+.footer-card-img{
+    width: 50px;
+    height: 50px;
+}
+.footer-card-img>img{
+    width: 100%;
+    height: 100%;
+}
+.footer-links, .footer-about, .footer-services, .footer-terms{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.footer-links ul, .footer-about ul, .footer-services ul , .footer-terms ul{
+    margin: 80px 0 0 0 ;
+    padding: 0;
+    list-style: none;
+}
+.footer-links a li, .footer-about a>li, .footer-services a>li , .footer-terms li{
+    margin: 0 0 20px 0 ;
+    padding: 0;
+}
+.footer-all-links{
+    color: #010101;
+    text-decoration: none;
+}
+@media (max-width: 1500px) { 
+    #sideBar {
+        width: 40vh;
+        display: flex;
+        transition: width 1s linear;
+    }
+    .content{
+       max-width: 1500px;
+       margin: 0 auto;
+    }
+}

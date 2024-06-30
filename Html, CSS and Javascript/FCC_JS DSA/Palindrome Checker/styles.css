@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main-container{
+height: 100vh;
+position: relative;
+max-width: 1500px;
+margin: 0 auto;
+background-color: aqua;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+#header{
+    
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+}
+.content-holder{
+    background-color: antiquewhite;
+    width: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#input-container{
+    width: 80%;
+    height: 100%;
+    border-radius: 5px;
+    margin: 50px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#input-container input{
+    width: 90%;
+    height: 70px;
+    padding: 0 30px;
+    font-size: 1.4rem;
+    border-radius: 5px;
+
+}
+#input-container input:focus{
+    border: none;
+   outline: 1px solid #2C60F5;
+}
+#checkButton{
+    width: 25%;
+    height: 70px;
+    border-radius: 5px;
+    padding: 0 30px;
+    font-size: 1.4rem;
+    margin-left: 20px;
+    background-color:  #2C60F5;
+    cursor: pointer;
+    border: none;
+}
+
+.palindrome-desc{
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+
+}
+.text-checker{
+    font-weight: normal;
+}
