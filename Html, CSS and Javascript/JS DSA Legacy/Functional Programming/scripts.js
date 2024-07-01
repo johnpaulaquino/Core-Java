@@ -199,6 +199,68 @@ const watchList = [
   
 //   console.log(JSON.stringify(ratings));
 
-const filteredList = watchList.map((movie) => ({title: movie["Title"], 
-    rating: movie["imdbRating"]})).filter((ratings) => ratings >= 8.0);
-console.log(filteredList);
+// const filteredList = watchList.filter(rate => rate["imdbRating"]>= 8.0)
+// .map((movie) => ({title: movie["Title"], 
+//   rating: movie["imdbRating"]}));
+// console.log(filteredList);
+
+// Implement map on a Prototype
+// As you have seen from applying Array.prototype.map(), or simply map() earlier, 
+// the map method returns an array of the same length as the one it was called on.
+//  It also doesn't alter the original array, as long as its callback function doesn't.
+// Array.prototype.myMap = function(callback) {
+//   const newArray = [];
+//   // Only change code below this line
+// for (let i = 0; i < this.length; i++) {
+//     newArray.push(callback(this[i], i, this));
+//   }
+//   // Only change code above this line
+//   return newArray;
+// }
+
+
+// Implement the filter Method on a Prototype
+// You might learn a lot about the filter method if you 
+// implement your own version of it. It is recommended you use a for 
+// loop or Array.prototype.forEach().Write your own Array.prototype.myFilter(), 
+// which should behave exactly like Array.prototype.filter(). You should not use the 
+// built-in filter method. The Array instance can be accessed in the myFilter method 
+// using this.
+// Array.prototype.myFilter = function(callback) {
+//   const newArray = [];
+//   // Only change code below this line
+//      for(let i = 0; i>this.length; i++){
+//       if (callback(this[i], i, this) == true) {
+//       newArray.push(this[i]);
+//     }
+//      }
+
+//   // Only change code above this line
+//   return newArray;
+// }
+
+
+// console.log(getRating(watchList));
+// const filteredList = watchList.filter((rate) => rate["imdbRating"]>= 8.0)
+// .map((movie) => ({title: movie["Title"], 
+//   rating: movie["imdbRating"]}));
+// console.log(filteredList);
+
+function getRating(watchList){
+  // Add your code below this line
+  const averageRating = watchList
+    // Use filter to find films directed by Christopher Nolan
+    .filter(film => film.Director === "Christopher Nolan")
+    // Use map to convert their ratings from strings to numbers
+    .map(film => Number(film.imdbRating))
+    // Use reduce to add together their ratings
+    .reduce((sumOfRatings, rating) => sumOfRatings + rating) /
+  // Divide by the number of Nolan films to get the average rating
+  watchList.filter(film => film.Director === "Christopher Nolan").length;
+  // Add your code above this line
+  return averageRating;
+}
+console.log(getRating(watchList));
+
+
+
